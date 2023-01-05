@@ -11,14 +11,18 @@
 <?php
     $name = $_POST['name'];
     $flavor = $_POST['flavor'];
-    echo 'Thank, you, '. $name .' for your order! <br>';
-    echo 'Order Summary:';
-    foreach ($flavor as $value) {
-        echo"<li>".$value."</li>";
+    if (sizeof($flavor) < 1) {
+        echo 'Error, no cupcake selected';
+    } else {
+        echo 'Thank, you, '. $name .' for your order! <br>';
+        echo 'Order Summary:';
+        foreach ($flavor as $value) {
+            echo"<li>".$value."</li>";
+        }
+        $cupcake = sizeof($flavor);
+        $cupcake *= 3.5;
+        echo 'order total: $'.$cupcake;
     }
-    $cupcake = sizeof($flavor);
-    $cupcake *= 3.5;
-    echo 'order total: $'.$cupcake;
 
 ?>
 </body>

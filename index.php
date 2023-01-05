@@ -10,7 +10,7 @@
 <body>
     <h1>Cupcake Fundraiser</h1>
     <form method="post" action="process.php">
-        <label><input type="text" name="name">Your name:</label>
+        <label><input type="text" name="name" required>Your name:</label>
         <label for="name">Cupcake flavors:</label>
         <label><input type="checkbox" name="flavor[]" value="The Grasshopper">The Grasshopper</label>
         <label><input type="checkbox" name="flavor[]" value="Whiskey Maple Bacon">Whiskey Maple Bacon</label>
