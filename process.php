@@ -1,3 +1,11 @@
+<!--
+    Stewart Lovell
+    Zack Dithilath
+    1/5/2023
+    https://stewartlovell.greenriverdev.com/328/cupcakes/
+    Basic form that requires a name and at least one cupcake selection,
+    submits to a page that displays the order information
+-->
 <!doctype html>
 <html lang="en">
 <head>
